@@ -12,6 +12,22 @@ public class Rover {
     }
 
     public void move(String command){
+        for (int i=0;i<command.length();i++){
+            char currentCommand = command.charAt(i);
+            switch (currentCommand){
+                //Go forward
+                case 'f':
+                    if (facing == N){
+                        if (y != 5){
+                            y++;
+                        }
+                        else{
+
+                        }
+                    }
+
+            }
+        }
 
     }
 

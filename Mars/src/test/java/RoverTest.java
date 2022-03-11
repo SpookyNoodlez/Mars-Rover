@@ -6,12 +6,10 @@ import static org.junit.jupiter.api.Assertions.*;
 class RoverTest {
     private Rover rover;
 
-
     @BeforeEach
     void setUp(){
-         rover = new Rover(0, 3,3);
+         rover = new Rover(0, 3,4);
     }
-
 
     @Test
     void testConstructor() {
@@ -19,5 +17,10 @@ class RoverTest {
         assertEquals(rover.E, rover.getFacing());
         assertEquals(1, rover.getX());
         assertEquals(0, rover.getY());
+    }
+    @Test
+    void testMovingForward(){
+        rover.move("f");
+        assertEquals(5, rover.getY());
     }
 }
