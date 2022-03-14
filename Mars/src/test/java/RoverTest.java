@@ -23,4 +23,14 @@ class RoverTest {
         rover.move("f");
         assertEquals(5, rover.getY());
     }
+    @Test
+    void testMovingBackwards(){
+        rover.move("b");
+        assertEquals(3, rover.getY());
+    }
+    @Test
+    void testMovingBackwardsTwice(){
+        rover.move("bb");
+        assertEquals(2, rover.getY());
+    }
 }
