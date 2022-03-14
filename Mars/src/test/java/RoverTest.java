@@ -48,4 +48,9 @@ class RoverTest {
         rover.move("r");
         assertEquals(rover.E, rover.getFacing());
     }
+    @Test
+    void testTurnLeft(){
+        rover.move("l");
+        assertEquals(rover.W, rover.getFacing());
+    }
 }
