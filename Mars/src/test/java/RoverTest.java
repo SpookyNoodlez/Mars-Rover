@@ -63,4 +63,9 @@ class RoverTest {
         rover.move("rfff");
         assertEquals(1, rover.getX());
     }
+    @Test
+    void testWrapLeft(){
+        rover.move("lfff");
+        assertEquals(5, rover.getX());
+    }
 }
