@@ -53,4 +53,9 @@ class RoverTest {
         rover.move("l");
         assertEquals(rover.W, rover.getFacing());
     }
+    @Test
+    void testInCircles(){
+        rover.move("rrrrrr");
+        assertEquals(rover.S, rover.getFacing());
+    }
 }
