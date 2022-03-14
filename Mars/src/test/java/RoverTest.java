@@ -33,4 +33,9 @@ class RoverTest {
         rover.move("bb");
         assertEquals(2, rover.getY());
     }
+    @Test
+    void testWrapTop(){
+        rover.move("ff");
+        assertEquals(1, rover.getY());
+    }
 }
