@@ -94,7 +94,7 @@ public class Rover {
                         facing--;
                     }
                     break;
-                //Turn left
+                //Turn right
                 case 'r':
                     if (facing == 3){
                         facing = 0;
